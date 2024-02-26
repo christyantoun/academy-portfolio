@@ -2,6 +2,9 @@
 # Simple Portfolio Project
 
 Welcome to the Simple Portfolio Project workshop! This workshop is designed to introduce participants to the basics of web development and Angular framework. By the end of this workshop, you will learn how to convert a vanilla HTML/CSS project into a dynamic Angular application.
+
+![portfolio-template](https://github.com/christyantoun/academy-portfolio/assets/77684862/8fc24ccc-2d53-4c69-9617-0a2a1b0cc98d)
+
 ## Objectives
 
 The objective of this workshop is to provide you with hands-on experience in converting a static website into a dynamic Angular application. You will gain familiarity with basic Angular concepts and best practices.
