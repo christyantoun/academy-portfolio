@@ -73,10 +73,11 @@ a:hover {
 .section__img {
   width: 400px;
   height: 400px;
-  img {
-    height: 100%;
-    width: 100%;
-  }
+}
+
+.section__img img {
+  height: 100%;
+  width: 100%;
 }
 
 section {
@@ -300,11 +301,12 @@ section {
     height: 275px;
     margin: 0 auto 2rem;
     border-radius: 50%;
-
-    img {
-      border-radius: 50%;
-    }
   }
+
+  .section__pic-container img {
+      border-radius: 50%;
+  }
+  
   .about-containers {
     margin-top: 0;
   }
@@ -342,16 +344,20 @@ section {
   .section__pic-container {
     width: auto;
     justify-content: center;
-    img {
-      border-radius: 50%;
-    }
   }
+
+  .section__pic-container img {
+      border-radius: 50%;
+  }
+  
   .section__text__p2 {
     font-size: 1.25rem;
   }
+  
   .title {
     font-size: 2rem;
   }
+  
   .text-container {
     text-align: justify;
   }
