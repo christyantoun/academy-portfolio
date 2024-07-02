@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './landing.component.scss'
 })
 export class LandingComponent {
-
+  openUrl(url: string): void {
+    window.open(url, '_blank');
+  }
 }
