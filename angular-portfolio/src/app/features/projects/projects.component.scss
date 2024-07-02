@@ -1,0 +1,15 @@
+#projects {
+  position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #projects {
+    display: block;
+  }
+}
