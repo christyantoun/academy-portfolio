@@ -1,0 +1,145 @@
+$section-padding-top: 4vh;
+$section-height: 96vh;
+$section-margin: 0 10rem;
+$img-size: 400px;
+
+/* SECTIONS */
+section{
+    padding-top: $section-padding-top;
+    height: $section-height;
+    margin: $section-margin;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section {
+    
+    &-container {
+        display: flex;
+    }
+    
+    &__profile {
+        display: flex;
+        justify-content: center;
+    
+        &_text {
+        height: $img-size;
+        align-self: center;
+        }
+    }
+    
+    &__img {
+        width: $img-size;
+        height: $img-size;
+
+        img {
+        height: 100%;
+        width: 100%;
+        }
+    }
+}
+  
+/* PROFILE SECTION */
+  
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+
+    p {
+        font-weight: 600;
+    }
+
+    &__p1 {
+        text-align: center;
+    }
+
+    &__p2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+  
+.title {
+font-size: 3rem;
+text-align: center;
+}
+  
+#socials-container {
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+gap: 1rem;
+}
+  
+/* ICONS */
+  
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+  
+/* BUTTONS */
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+
+    &-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+    &color-1,
+      &color-2 {
+        border: rgb(53, 53, 53) 0.1rem solid;
+      }
+
+    &-color-1:hover,
+    &-color-2:hover {
+    cursor: pointer;
+    }
+
+    &-color-1,
+    &-color-2:hover {
+        background: rgb(53, 53, 53);
+        color: white;
+    }
+  
+    &-color-1:hover {
+        background: rgb(0, 0, 0);
+    }
+  
+    &-color-2 {
+        background: none;
+    }
+  
+    &-color-2:hover {
+        border: rgb(255, 255, 255) 0.1rem solid;
+    }
+  
+    &-container {
+        gap: 1rem;
+    }
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
