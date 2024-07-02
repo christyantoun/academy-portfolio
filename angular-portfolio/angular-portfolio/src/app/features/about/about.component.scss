@@ -1,0 +1,18 @@
+.section-container {
+  display: flex;
+}
+
+#about {
+  position: relative;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 50%;
+}
