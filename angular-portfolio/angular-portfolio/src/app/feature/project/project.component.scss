@@ -1,0 +1,24 @@
+#projects {
+    position: relative;
+}
+
+.project{
+    &-img {
+        border-radius: 2rem;
+        width: 90%;
+        height: 90%;
+    }
+      
+    &-title {
+        margin: 1rem;
+        color: black;
+    }
+      
+    &-btn {
+        color: black;
+        border-color: rgb(163, 163, 163);
+        &:hover {
+            color: white; 
+        }
+    }
+}

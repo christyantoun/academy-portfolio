@@ -1,0 +1,21 @@
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about {
+    &-details-container {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+      }
+      
+    &-pic {
+    border-radius: 2rem;
+    }
+}
+
+.text-container {
+    text-align: center;
+}
