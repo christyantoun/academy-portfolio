@@ -4,7 +4,7 @@ $black: rgb(0,0,0);
 nav{
   display: flex;
   justify-content: space-between;
-  margin: 0 10rem;
+  margin: 0 10rem !important;
   align-items: center;
   height: 17vh;
 }
