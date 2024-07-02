@@ -1,0 +1,89 @@
+$color_1: white;
+
+.section__profile {
+	display: flex;
+	justify-content: center;
+}
+.section__profile_text {
+	height: 400px;
+	align-self: center;
+}
+.section__img {
+	width: 400px;
+	height: 400px;
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.section-container {
+	display: flex;
+}
+#profile {
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	height: 80vh;
+}
+.section__text {
+	align-self: center;
+	text-align: center;
+	p {
+		font-weight: 600;
+	}
+}
+.section__text__p1 {
+	text-align: center;
+}
+.section__text__p2 {
+	font-size: 1.75rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.title {
+	font-size: 3rem;
+	text-align: center;
+}
+#socials-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+.icon {
+	cursor: pointer;
+	height: 2rem;
+}
+.btn-container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	gap: 1rem;
+}
+.btn {
+	font-weight: 600;
+	transition: all 300ms ease;
+	padding: 1rem;
+	width: 8rem;
+	border-radius: 2rem;
+}
+.btn-color-1 {
+	border: rgb(53, 53, 53) 0.1rem solid;
+	background: rgb(53, 53, 53);
+	color: $color_1;
+	&:hover {
+		cursor: pointer;
+		background: rgb(0, 0, 0);
+	}
+}
+.btn-color-2 {
+	border: rgb(53, 53, 53) 0.1rem solid;
+	background: none;
+	&:hover {
+		cursor: pointer;
+		background: rgb(53, 53, 53);
+		color: $color_1;
+		border: rgb(255, 255, 255) 0.1rem solid;
+	}
+}

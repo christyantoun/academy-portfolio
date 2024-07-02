@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+$color_1: rgb(85, 85, 85);
+$font-family_1: "Poppins", sans-serif;
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: $font-family_1;
+}
+html {
+	scroll-behavior: smooth;
+}
+p {
+	color: $color_1;
+}
+
+nav {
+	justify-content: space-between;
+	margin: 0 10rem;
+	align-items: center;
+	height: 17vh;
+  }
+
+section {
+	padding-top: 4vh;
+	height: 96vh;
+	margin: 0 10rem;
+	box-sizing: border-box;
+	min-height: fit-content;
+}
+
+

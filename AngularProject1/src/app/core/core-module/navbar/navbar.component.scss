@@ -1,0 +1,39 @@
+$color1: black;
+$color2: grey;
+$color3: white;
+$font-family_1: "Poppins", sans-serif;
+
+nav {
+  justify-content: space-between;
+  margin: 0 10rem;
+  align-items: center;
+  height: 17vh;
+  display: flex;
+  font-family: $font-family_1;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+  display: flex;
+}
+
+a {
+  color: $color1;
+  text-decoration: none;
+  text-decoration-color: $color3;
+  &:hover {
+  color: $color2;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+    }
+}
+
+.logo {
+  font-size: 1rem;
+&:hover{
+    cursor: default;
+    }
+}
