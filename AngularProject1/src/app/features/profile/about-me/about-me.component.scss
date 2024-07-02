@@ -3,12 +3,6 @@ $border-color_1: rgb(163, 163, 163);
 #about {
 	position: relative;
 }
-.about-containers {
-	gap: 2rem;
-	margin-bottom: 2rem;
-	margin-top: 2rem;
-	display: flex;
-}
 .about-details-container {
 	justify-content: center;
 	flex-direction: column;
@@ -28,16 +22,6 @@ $border-color_1: rgb(163, 163, 163);
 }
 .section__text__p1 {
 	text-align: center;
-  }
-
-.title {
-	font-size: 3rem;
-	text-align: center;
-  }
-
-.icon {
-	cursor: pointer;
-	height: 2rem;
   }
 
 .section-container {
