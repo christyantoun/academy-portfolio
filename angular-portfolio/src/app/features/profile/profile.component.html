@@ -1,0 +1,33 @@
+<section id="profile">
+  <div class="section__profile">
+    <div class="section__img">
+      <img src="./assets/random.jpeg" alt="Development picture" />
+    </div>
+  </div>
+  <div class="section__profile_text">
+    <div>
+      <h1 class="title">{{ title }}</h1>
+      <p class="section__text__p2">{{ subTitle }}</p>
+    </div>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2"
+        onclick="window.open('./assets/resume-example.pdf')"
+      >
+        Download CV
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
+    </div>
+    <div id="socials-container">
+      <img
+        *ngFor="let social of socials"
+        [src]="social.imageUrl"
+        [alt]="social.name"
+        class="icon"
+        (click)="navigateToSocialAccount(social.socialUrl)"
+      />
+    </div>
+  </div>
+</section>

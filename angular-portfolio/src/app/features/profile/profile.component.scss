@@ -1,0 +1,40 @@
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+  p {
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #profile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile {
+    height: 87vh;
+    margin-bottom: 0;
+  }
+}
