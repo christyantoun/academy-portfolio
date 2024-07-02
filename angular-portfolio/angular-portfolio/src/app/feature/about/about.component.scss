@@ -2,24 +2,20 @@
 
 #about {
     position: relative;
-  }
-  
-  .about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .about-details-container {
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .about-containers,
-  .about-details-container {
-    display: flex;
-  }
-  
-  .about-pic {
+}
+
+.about {
+    &-details-container {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+      }
+      
+    &-pic {
     border-radius: 2rem;
-  }
+    }
+}
+
+.text-container {
+    text-align: center;
+}
