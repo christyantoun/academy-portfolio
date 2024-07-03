@@ -1,0 +1,24 @@
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+  height: 50%;
+
+  .about-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .about-containers {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+  }
+}
