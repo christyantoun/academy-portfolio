@@ -10,6 +10,8 @@ nav {
   height: 17vh;
 }
 
+
+
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -27,4 +29,12 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 1rem;
+}
+
+.logo:hover {
+  cursor: default;
 }
