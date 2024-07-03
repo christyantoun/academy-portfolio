@@ -1,25 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BtnComponent } from './btn/btn.component';
-import { ProjectImgComponent } from './project-img/project-img.component';
 import { AboutDetailComponent } from './about-detail/about-detail.component';
+import { ProjectComponent } from './project/project.component';
 
 
 
 
 @NgModule({
   declarations: [
-    BtnComponent,
-    ProjectImgComponent,
-    AboutDetailComponent
+   
+    AboutDetailComponent,
+    ProjectComponent
   ],
   imports: [
     CommonModule
   ],
   exports:[
-    BtnComponent,
-    ProjectImgComponent,
-    AboutDetailComponent
+  
+    AboutDetailComponent,
+    ProjectComponent
   ]
 })
 export class SharedModule { }
