@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { ProjectsComponent } from './projects/projects.component';
 import { SharedModule } from '../shared/shared.module';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
 @NgModule({
   declarations: [
     ProjectsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
   ],
   exports: [
     ProjectsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ProfileComponent
    
   ]
 })
