@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+$primary-font: "Poppins", sans-serif;
+$text-color: rgb(85, 85, 85);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: $text-color;
+}
