@@ -1,0 +1,47 @@
+$primary-color: rgb(53, 53, 53);
+$secondary-color: rgb(163, 163, 163);
+$border-radius: 2rem;
+$gap: 2rem;
+$section-gap: 4rem;
+$pic-container-height: 700px;
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: $gap;
+  margin-bottom: $gap;
+  margin-top: $gap;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.about-pic {
+  border-radius: $border-radius;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: $border-radius;
+  border: $primary-color 0.1rem solid;
+  border-color: $secondary-color;
+  text-align: center;
+}
+
+.section-container {
+  gap: $section-gap;
+  height: 50%;
+}
+
+.section__pic-container {
+  height: $pic-container-height;
+  width: auto;
+  margin: auto 0;
+}
