@@ -4,6 +4,7 @@ $border-radius: 2rem;
 $gap: 2rem;
 $section-gap: 4rem;
 $pic-container-height: 700px;
+$title-font-size: 2rem;
 
 #about {
   position: relative;
@@ -26,6 +27,13 @@ $pic-container-height: 700px;
   width: 100%;
 }
 
+.details-container {
+  border: 1px solid $primary-color;
+  border-radius: $border-radius;
+  padding: $gap;
+  text-align: center;
+  margin-bottom: $gap;
+}
 .about-pic {
   border-radius: $border-radius;
 }
