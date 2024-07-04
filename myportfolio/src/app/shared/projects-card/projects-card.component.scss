@@ -1,0 +1,39 @@
+$primary-color: rgb(163, 163, 163);
+$secondary-color: rgb(250, 250, 250);
+$border-radius: 2rem;
+$gap: 1rem;
+$media-medium: 1000px;
+
+.project-img {
+  border-radius: $border-radius;
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: $primary-color;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+
+.details-container {
+  flex: 1 1 calc(50% - #{$gap});
+  max-width: calc(50% - 3* #{$gap});
+}
+
+@media screen and (max-width: $media-medium) {
+  .details-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

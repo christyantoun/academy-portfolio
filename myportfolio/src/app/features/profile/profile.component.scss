@@ -1,0 +1,52 @@
+$primary-color: rgb(53, 53, 53);
+$secondary-color: rgb(255, 255, 255);
+$gap: 1rem;
+$title-font-size: 2rem;
+$nav-height: 70vh;
+$nav-gap: 5rem;
+$section-img-size: 400px;
+
+.section__profile {
+  display: flex;
+  justify-content: center;
+}
+
+.section__profile_text {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+}
+
+.section__img {
+  width: $section-img-size;
+  height: $section-img-size;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $nav-gap;
+  height: $nav-height;
+  font-size: $title-font-size;
+
+  }
+
+  
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: $gap;
+    gap: $gap;
+
+    
+  }
+

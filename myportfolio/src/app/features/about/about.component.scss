@@ -1,0 +1,21 @@
+$secondary-color: rgb(250, 250, 250);
+$section-gap: 4rem;
+$pic-container-height: 700px;
+$title-font-size: 3rem;
+
+#about {
+  position: relative;
+  text-align: center;
+}
+
+.section-container {
+  gap: $section-gap;
+}
+
+.section__pic-container {
+  height: $pic-container-height;
+}
+
+.title{
+  font-size: $title-font-size;
+}

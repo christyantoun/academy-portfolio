@@ -1,0 +1,49 @@
+$primary-color: black;
+$secondary-color: grey;
+$link-hover-color: rgb(181, 181, 181);
+$link-hover-offset: 1rem;
+$nav-margin: 2rem;
+$nav-height: 17vh;
+$font-size: 1rem;
+$gap: 2rem;
+
+nav, .nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  margin: 0 $nav-margin;
+  align-items: center;
+  height: $nav-height;
+
+  .logo {
+    font-size: $font-size;
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.nav-links {
+  gap: $gap;
+  list-style: none;
+  font-size: $font-size;
+
+  li {
+    display: inline;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    text-decoration-color: $secondary-color;
+
+    &:hover {
+      color: $secondary-color;
+      text-decoration: underline;
+      text-underline-offset: $link-hover-offset;
+      text-decoration-color: $link-hover-color;
+    }
+  }
+}

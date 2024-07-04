@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+$primary-font: "Poppins", sans-serif;
+$text-color: rgb(85, 85, 85);
+$section-text-font-size: 2rem;
+$icon-height: 2rem;
+$gap: 1rem;
+$title-font-size: 3rem;
+$btn-transition-duration: 300ms;
+$btn-padding: 1rem;
+$btn-width: 8rem;
+$btn-border-radius: 2rem;
+$btn-border-width: 0.1rem;
+$btn-font-weight: 600;
+$primary-color: rgb(53, 53, 53);
+$secondary-color: rgb(255, 255, 255);
+$hover-color: rgb(0, 0, 0);
+$border-radius: 2rem;
+$media-large: 1400px;
+$media-medium: 1000px;
+$media-small: 600px;
+$section-padding-top: 4vh;
+$section-height: 100vh;
+$section-margin: 0 10rem;
+$section-container-margin: 1rem;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: $text-color;
+}
+
+section {
+  padding-top: $section-padding-top;
+  height: $section-height;
+  margin: $section-margin;
+  box-sizing: border-box;
+  min-height: fit-content;
+
+  .section-container {
+    display: flex;
+    margin: $section-container-margin;
+  }
+}
+
+.color-container {
+  border-color: $primary-color;
+  background: $secondary-color;
+}
+
+.icon {
+  cursor: pointer;
+  height: $icon-height;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+
+  p {
+    font-weight: 600;
+  }
+
+  &__p1 {
+    text-align: center;
+  }
+
+  &__p2 {
+    font-size: $section-text-font-size;
+    margin-bottom: $gap;
+    text-align: center;
+  }
+
+  .title {
+    font-size: $title-font-size;
+    text-align: center;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: $gap;
+
+  .btn {
+    font-weight: $btn-font-weight;
+    transition: all $btn-transition-duration ease;
+    padding: $btn-padding;
+    width: $btn-width;
+    border-radius: $btn-border-radius;
+    border: $primary-color $btn-border-width solid;
+    background-color: transparent;
+    color: $primary-color;
+    cursor: pointer;
+
+    &.btn-color-1,
+    &.btn-color-2 {
+      border-color: $primary-color;
+    }
+
+    &:hover {
+      background-color: $hover-color;
+      color: $secondary-color;
+    }
+
+    &.btn-color-1 {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+
+    &.btn-color-1:hover {
+      background-color: $hover-color;
+
+    }
+
+    &.btn-color-2:hover {
+      background-color: $primary-color;
+    }
+
+    &.btn-color-2 {
+      background: none;
+    }
+  }
+}
+
+.details-container {
+  padding: $gap;
+  flex: 1;
+  background: $secondary-color;
+  border-radius: $border-radius;
+  border: $primary-color $btn-border-width solid;
+  text-align: center;
+  margin-bottom: $gap;
+  min-width: 0;
+}
+
+@media screen and (max-width: $media-large) {
+  nav {
+    margin: 0 2rem;
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+    min-width: fit-content;
+  }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: $media-medium) {
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: $media-small) {
+  #profile {
+    height: 87vh;
+    margin-bottom: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  nav {
+    height: fit-content;
+    margin: 1rem 2rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-links li a {
+    font-size: 0.5rem;
+  }
+
+  .logo {
+    font-size: 0.75rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: auto;
+    justify-content: center;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+}
