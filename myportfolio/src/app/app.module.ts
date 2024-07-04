@@ -7,6 +7,8 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { ProfileComponent } from './features/profile/profile.component';
 import { AboutComponent } from './features/about/about.component';
 import { ProjectsComponent } from './features/projects/projects.component';
+import { AboutCardComponent } from './shared/about-card/about-card.component';
+import { ProjectsCardComponent } from './shared/projects-card/projects-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ProjectsComponent } from './features/projects/projects.component';
     NavbarComponent,
     ProfileComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutCardComponent,
+    ProjectsCardComponent
   ],
   imports: [
     BrowserModule,
