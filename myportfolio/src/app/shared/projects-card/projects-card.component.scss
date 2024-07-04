@@ -5,8 +5,8 @@ $gap: 1rem;
 
 .project-img {
   border-radius: $border-radius;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: auto;
 }
 
 .project-title {
@@ -17,4 +17,22 @@ $gap: 1rem;
 .project-btn {
   color: black;
   border-color: $primary-color;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+
+.details-container {
+  flex: 1 1 calc(50% - #{$gap});
+  max-width: calc(50% - 3* #{$gap});
+}
+
+@media screen and (max-width: 768px) {
+  .details-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }

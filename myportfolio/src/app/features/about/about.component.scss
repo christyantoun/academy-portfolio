@@ -1,7 +1,7 @@
 $secondary-color: rgb(250, 250, 250);
 $section-gap: 4rem;
 $pic-container-height: 700px;
-$title-font-size: 2rem;
+$title-font-size: 3rem;
 
 #about {
   position: relative;
@@ -14,4 +14,8 @@ $title-font-size: 2rem;
 
 .section__pic-container {
   height: $pic-container-height;
+}
+
+.title{
+  font-size: $title-font-size;
 }
