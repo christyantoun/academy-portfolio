@@ -4,6 +4,6 @@ export interface About{
     imageUrl: string;
     cvUrl: string;
     contactUrl: string;
-    liUrl: string;
-    ghUrl: string;
+    linkedInUrl: string;
+    gitHubUrl: string;
 }
