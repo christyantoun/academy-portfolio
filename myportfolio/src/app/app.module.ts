@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
-import { ProfileComponent } from './profile/profile.component';
-import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProfileComponent } from './features/profile/profile.component';
+import { AboutComponent } from './features/about/about.component';
+import { ProjectsComponent } from './features/projects/projects.component';
 
 @NgModule({
   declarations: [
