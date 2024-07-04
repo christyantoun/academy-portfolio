@@ -1,0 +1,49 @@
+$about-gap: 2rem;
+$about-margin-bottom: 2rem;
+$about-margin-top: 2rem;
+$border-radius: 2rem;
+$section-gap: 4rem;
+$section-height: 50%;
+$pic-container-height: 700px;
+
+#about {
+  position: relative;
+
+  .about-containers {
+    display: flex;
+    gap: $about-gap;
+    margin-bottom: $about-margin-bottom;
+    margin-top: $about-margin-top;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    .about-details-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; 
+      width: 100%;
+      
+      .about-pic {
+        border-radius: $border-radius;
+      }
+    }
+  }
+
+  .section-container {
+    display: flex;
+    gap: $section-gap;
+    height: $section-height;
+    
+
+    .section__pic-container {
+      height: $pic-container-height;
+      width: auto;
+      margin: auto 0;
+    }
+  }
+}
+app-about-card {
+        display: flex;
+        flex-basis: 50%;
+      }
