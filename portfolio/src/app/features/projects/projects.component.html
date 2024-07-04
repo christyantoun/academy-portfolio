@@ -1,0 +1,15 @@
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <app-project-card
+        *ngFor="let project of projects"
+        [image]="project.image"
+        [title]="project.title"
+        [githubUrl]="project.githubUrl"
+        [demoUrl]="project.demoUrl">
+      </app-project-card>
+    </div>
+  </div>
+</section>
