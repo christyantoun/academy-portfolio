@@ -1,7 +1,4 @@
-$primary-color: rgb(163, 163, 163);
 $secondary-color: rgb(250, 250, 250);
-$border-radius: 2rem;
-$gap: 2rem;
 $section-gap: 4rem;
 $pic-container-height: 700px;
 $title-font-size: 2rem;
@@ -11,39 +8,10 @@ $title-font-size: 2rem;
   text-align: center;
 }
 
-.about-containers {
-  display: flex;
-  gap: $gap;
-  margin-bottom: $gap;
-  margin-top: $gap;
-  width: 100%;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.details-container {
-  border: 1px solid $primary-color;
-  border-radius: $border-radius;
-  padding: $gap;
-  text-align: center;
-  margin-bottom: $gap;
-}
-.about-pic {
-  border-radius: $border-radius;
-}
-
 .section-container {
   gap: $section-gap;
 }
 
 .section__pic-container {
   height: $pic-container-height;
-  width: auto;
-  margin: auto 0;
 }
