@@ -12,10 +12,15 @@ The objective of this workshop is to provide you with hands-on experience in con
 
 To get started with the workshop, follow these steps:
 
-- Clone the repo
-```bash
-  git clone https://github.com/christyantoun/academy-portfolio.git
-```
+- Fork the Repository:
+
+  Click the "Fork" button in the top right corner to create a copy of the repository under your GitHub account.
+
+
+- Clone the repo (Replace your-username with your GitHub username)
+  ```bash
+  git clone https://github.com/your-username/academy-portfolio.git
+  ```
 - Navigate to the Project Directory
 - Set Up Your Development Environment:
 
@@ -23,10 +28,10 @@ To get started with the workshop, follow these steps:
     . Follow the installation instructions for your operating system.
 
 - Install Angular CLI:
-```bash
-  npm install -g @angular/cli
-```
-> **_NOTE:_**  If you get the following error: `EACCES: permission denied`, run `sudo npm install @angular/cli@14.2.10 -g`
+  ```bash
+    npm install -g @angular/cli
+  ```
+  > **_NOTE:_**  If you get the following error: `EACCES: permission denied`, run `sudo npm install @angular/cli@14.2.10 -g`
 
 - Choose your Directory:
 
@@ -35,5 +40,5 @@ To get started with the workshop, follow these steps:
     
 - Happy Coding! 🚀
 
-![portfolio-template](https://github.com/christyantoun/academy-portfolio/assets/77684862/8fc24ccc-2d53-4c69-9617-0a2a1b0cc98d)
+
 
