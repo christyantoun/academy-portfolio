@@ -207,6 +207,7 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  justify-content: center;
 }
 
 .about-pic {
@@ -220,6 +221,7 @@ section {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
+  max-width: 300px;
   text-align: center;
 }
 

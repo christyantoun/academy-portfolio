@@ -7,6 +7,12 @@
   padding: 5px;
 }
 
+
+.selection {
+  display: flex;
+  justify-content: space-between;
+}
+
 .custom-select option {
   padding: 5px;
 }
