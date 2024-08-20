@@ -1,0 +1,25 @@
+.custom-select {
+  width: 100%;
+  height: 150px; /* Adjust height as needed */
+  overflow-y: auto; /* Allows scrolling if there are many options */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.custom-select option {
+  padding: 5px;
+}
+
+.selected-options {
+  margin-top: 10px;
+}
+
+.selected-options span {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin: 2px;
+}
