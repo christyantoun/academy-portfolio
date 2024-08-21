@@ -3,51 +3,54 @@
   <h1 class="title">Projects</h1>
 
   <div class="selection">
+    <app-multi-select
+      [items]="categories"
+      (selectionChange)="onCategorySelectChange($event)"
+    >
+    </app-multi-select>
 
-  <app-multi-select
-    [items]='categories'
-    (selectionChange)="onSelectChange($event)"
-  >
-  </app-multi-select>
+    <!--    TODO ✅ add another multiselect here -->
 
-<!--    TODO add another multiselect here -->
+    <app-multi-select
+      [items]="statuses"
+      (selectionChange)="onStatusSelectChange($event)"
+    >
+    </app-multi-select>
   </div>
   <div class="experience-details-container">
     <div class="about-containers">
       @for (project of projects; track project.id) {
-        <div class="details-container color-container">
-          <div style="display: flex; justify-content: space-between;">
-            <p style="color: grey; padding: 10px; font-size: 12px">{{ project.status }}</p>
-            @for (category of project.categories; track category) {
-              <p style="color: #4a90e2; padding: 10px; font-size: 12px">{{ category.name }}</p>
-            }
-          </div>
-          <div class="article-container">
-            <img
-              [src]="project.imageUrl"
-              alt="Project 1"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">{{ project.name }}
-          </h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
+      <div class="details-container color-container">
+        <div style="display: flex; justify-content: space-between">
+          <p style="color: grey; padding: 10px; font-size: 12px">
+            {{ project.status }}
+          </p>
+          @for (category of project.categories; track category) {
+          <p style="color: #4a90e2; padding: 10px; font-size: 12px">
+            {{ category.name }}
+          </p>
+          }
         </div>
+        <div class="article-container">
+          <img [src]="project.imageUrl" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">{{ project.name }}</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
       }
     </div>
   </div>
-
 </section>

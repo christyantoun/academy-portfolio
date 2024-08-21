@@ -19,13 +19,17 @@ export class ProjectsComponent implements OnInit {
   projects: IProject[] = [];
   categories: ICategory[] = [];
 
-  //TODO pass 'statuses' to the new <multi-select> that you will create
+  //TODO ✅ pass 'statuses' to the new <multi-select> that you will create
   //** the multi-select component is expecting an @Input of type ICategory[]
   statuses: ICategory[] =[
     { id: 1, name: "completed" },
     { id: 2, name: "in-progress" },
     { id: 3, name: "not-started" }
   ]
+  
+  selectedCategories: number[] = [];
+  selectedStatuses: string[] = [];
+
   private _projectService = inject(ProjectService);
 
   ngOnInit(): void {
@@ -43,21 +47,34 @@ export class ProjectsComponent implements OnInit {
 
   //** we've added the project fetching as its own function so we can reuse it multiple times within the same component
   //** check for when the getProjects( )  function is being used in this file
-  getProjects(filters?: number[]){
-    this._projectService.getFilteredProject(filters).subscribe({
-      next: (value) => {
-        //** the below code maps the keys from the categoryId to their respective values so that we can show what the category name is in the UI instead of just the categoryId as number
-        this.projects = value.map(project => ({
-          ...project,
-          categories: project.categoryIds.map(id =>
-            this.categories.find(category => category.id === id)!
-          )
-        }));
-      }
-    })
+   
+  getProjects(): void {
+  const filters = {
+    categories: this.selectedCategories,
+    statuses: this.selectedStatuses
+  };
+
+  this._projectService.getFilteredProject(filters).subscribe({
+    next: (value) => {
+      this.projects = value.map(project => ({
+        ...project,
+        categories: project.categoryIds.map(id =>
+          this.categories.find(category => category.id === id)!
+        )
+      }));
+    }
+  });
+}
+
+
+   onCategorySelectChange(selection: ICategory[]): void {
+    this.selectedCategories = selection.map(entry => entry.id);
+    this.getProjects();
   }
 
-  onSelectChange(selection: ICategory[]) {
-    this.getProjects(selection.map(selectionEntry => selectionEntry.id));
+  onStatusSelectChange(selection: ICategory[]): void {
+    this.selectedStatuses = selection.map(entry => entry.name);
+    this.getProjects();
   }
+
 }
