@@ -227,7 +227,10 @@ section {
 }
 
 .section-container {
+ display: flex;
+  justify-content: center;
   gap: 4rem;
+  width: 100%; /* Ensure it's full width */
   height: 50%;
 }
 

@@ -1,4 +1,22 @@
 <router-outlet></router-outlet>
-<app-projects></app-projects>
-<!-- TODO Bonus homework create the about me component passing @Input into it and on click use @Output() to log that the input was clicked-->
-<!-- TODO Bonus finish converting the vanilla project to an angular project -->
+
+<app-navbar/>
+
+<app-profile/>
+
+<!-- TODO ✅ Bonus homework create the about me component passing @Input into it and on click use @Output() to log that the input was clicked-->
+
+<app-about
+  [experience]="'5+ years'"
+  [field]="'Software Engineering'"
+  [degree]="'M.Sc. Masters Degree'"
+  [university]="'Tech University'"
+  [description]="
+    'A seasoned software engineer with extensive experience in developing scalable web applications...'
+  "
+></app-about>
+
+
+<app-projects/>
+
+<!-- TODO ✅ Bonus finish converting the vanilla project to an angular project -->
