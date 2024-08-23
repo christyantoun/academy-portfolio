@@ -1,0 +1,44 @@
+<div class="multi-select-dropdown">
+    <div class="input-container">
+      @for (item of items; track item.name) {
+  
+        @if (item.selected) {
+          <div class="selected-item">
+            {{ item.name }}
+            <button (click)="removeItem(item, $event)">x</button>
+          </div>
+  
+        }
+      }
+  
+      <input
+        type="text"
+        (focus)="showDropdown()"
+        (input)="filterItems($event)"
+        [placeholder]="isDropdownVisible ? '' : 'Select items...'"
+  
+      >
+  
+  
+    </div>
+  
+    @if (isDropdownVisible) {
+      <div class="dropdown-list">
+        @for (item of filteredItems; track item.name) {
+          <div class="dropdown-item" (click)="toggleItem(item, $event)">
+                      <span class="checkbox" [class.checked]="item.selected">
+                          @if (item.selected) {
+                            <span class="checkmark">✓</span>
+                          }
+  
+                      </span>
+  
+            <span>{{ item.name }}</span>
+  
+          </div>
+        }
+  
+      </div>
+    }
+  
+  </div>
