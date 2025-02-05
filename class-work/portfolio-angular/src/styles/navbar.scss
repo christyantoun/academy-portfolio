@@ -1,0 +1,30 @@
+nav {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: $primary-color;
+  color: white;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+#about {
+  position: relative;
+
+  .about-containers {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .about-containers {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .text-container {
+      text-align: justify;
+    }
+  }
+}
