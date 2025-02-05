@@ -1,0 +1,48 @@
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+  }
+  
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 50%;
+}
+
+.section__pic-container {
+  height: 700px;
+  width: auto;
+  margin: auto 0;
+}
+
+app-about-card {
+  flex: 1;
+  max-width: 300px;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
