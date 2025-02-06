@@ -1,0 +1,40 @@
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  margin: 0 10rem;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+    nav {
+      margin: 0 2rem;
+      font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+      height: fit-content;
+      margin: 1rem 2rem;
+    }
+  
+    .nav-links li a {
+      font-size: 0.5rem;
+    }
+
+    .nav-links {
+      gap: 0.5rem;
+      text-align: center;
+    }
+}
