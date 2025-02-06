@@ -1,0 +1,48 @@
+$nav-margin: 0 3rem;
+$nav-height: 17vh;
+$link-gap: 2rem;
+$font-size: 1.3rem;
+$link-color: black;
+$link-hover-color: grey;
+$text-decoration-color: white;
+$underline-offset: 1rem;
+$underline-hover-color: rgb(181, 181, 181);
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  margin: $nav-margin;
+  align-items: center;
+  height: $nav-height;
+
+  .nav-links {
+    gap: $link-gap;
+    list-style: none;
+    font-size: $font-size;
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    text-decoration-color: $text-decoration-color;
+
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: underline;
+      text-underline-offset: $underline-offset;
+      text-decoration-color: $underline-hover-color;
+    }
+  }
+
+  .logo {
+    font-size: $font-size;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}

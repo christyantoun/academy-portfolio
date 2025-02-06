@@ -1,0 +1,44 @@
+$profile-text-height: 400px;
+$img-dimension: 400px;
+
+$profile-gap: 5rem;
+$profile-height: 80vh;
+
+$socials-margin-top: 1rem;
+$socials-gap: 1rem;
+
+
+.section__profile {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    height: $profile-text-height;
+    align-self: center;
+  }
+
+  &__img {
+    width: $img-dimension;
+    height: $img-dimension;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: $profile-gap;
+  height: $profile-height;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: $socials-margin-top;
+  gap: $socials-gap;
+}

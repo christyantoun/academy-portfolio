@@ -1,0 +1,31 @@
+$project-img-border-radius: 2rem;
+$project-img-width: 90%;
+$project-img-height: 90%;
+$project-title-margin: 1rem;
+$project-title-color: black;
+$project-btn-color: black;
+$project-btn-border-color: rgb(163, 163, 163);
+$color-container-border-color: rgb(163, 163, 163);
+$color-container-background: rgb(250, 250, 250);
+  
+    .color-container {
+    border-color: $color-container-border-color;
+    background: $color-container-background;
+    
+    }
+    
+    .project-img {
+      border-radius: $project-img-border-radius;
+      width: $project-img-width;
+      height: $project-img-height;
+    }
+
+    .project-title {
+      margin: $project-title-margin;
+      color: $project-title-color;
+    }
+
+    .project-btn {
+      color: $project-btn-color;
+      border-color: $project-btn-border-color;
+    }
