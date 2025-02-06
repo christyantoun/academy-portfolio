@@ -1,0 +1,78 @@
+$nav-margin: 0 10rem;
+$nav-height: 17vh;
+$link-gap: 2rem;
+$link-font-size: 1rem;
+$logo-font-size: 1rem;
+$link-color: black;
+$link-hover-color: grey;
+$underline-offset: 1rem;
+$underline-color: rgb(181, 181, 181);
+
+@mixin respond-to($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $nav-margin;
+  height: $nav-height;
+
+  @include respond-to(1400px) {
+    margin: 0 2rem;
+    font-size: $link-font-size;
+  }
+
+  @include respond-to(600px) {
+    height: fit-content;
+    margin: 1rem 2rem;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: $link-gap;
+  list-style: none;
+  font-size: $link-font-size;
+
+  @include respond-to(600px) {
+    gap: 0.5rem;
+    text-align: center;
+
+    li a {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  text-decoration-color: white;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+    text-underline-offset: $underline-offset;
+    text-decoration-color: $underline-color;
+  }
+}
+
+.logo {
+  font-size: $logo-font-size;
+
+  &:hover {
+    cursor: default;
+  }
+
+  @include respond-to(1400px) {
+    font-size: $logo-font-size;
+  }
+
+  @include respond-to(600px) {
+    font-size: 0.75rem;
+  }
+}

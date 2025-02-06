@@ -1,0 +1,46 @@
+$pic-w: 275px;
+$pic-h: 275px;
+$border-radius: 50%;
+@mixin respond-to($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+#projects {
+  position: relative;
+}
+
+@include respond-to(1400px) {
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@include respond-to(1000px) {
+  .section__pic-container {
+    width: $pic-w;
+    height: $pic-h;
+    margin: 0 auto 2rem;
+    border-radius: $border-radius;
+
+    img {
+      border-radius: $border-radius;
+    }
+  }
+}
+
+@include respond-to(600px) {
+  article {
+    font-size: 1rem;
+  }
+
+  .section__pic-container {
+    width: auto;
+    justify-content: center;
+
+    img {
+      border-radius: $border-radius;
+    }
+  }
+}

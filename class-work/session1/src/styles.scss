@@ -1,0 +1,249 @@
+// General
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+
+// Spacing & Layout
+$gap-large: 4rem;
+$gap-medium: 2rem;
+$socials-gap: 1rem;
+$section-margin: 0 5%;
+$margin-top: 2rem;
+$margin-bottom: 2rem;
+
+// Typography
+$title-font-size: 3rem;
+$subtitle-font-size: 1.75rem;
+
+// Button Styling
+$btn-padding: 1rem;
+$btn-width: 8rem;
+$btn-radius: 2rem;
+$btn-border-color: rgb(53, 53, 53);
+$btn-hover-bg: rgb(53, 53, 53);
+$btn-hover-color: white;
+$btn-color-1-hover-bg: rgb(0, 0, 0);
+$btn-color-2-bg: none;
+$btn-color-2-hover-border: rgb(255, 255, 255);
+
+// Border Styling
+$border-color: rgb(163, 163, 163);
+
+@mixin respond-to($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Sections
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: $subtitle-font-size;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  @include respond-to(600px) {
+    font-size: 1.25rem;
+  }
+}
+.section-container {
+  display: flex;
+}
+
+.section-container {
+  gap: $gap-large;
+  height: 50%;
+}
+
+//About section
+
+#about {
+  position: relative;
+}
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: $border-color;
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-containers {
+  gap: $gap-medium;
+  margin-bottom: $margin-bottom;
+  margin-top: $margin-top;
+  display: flex;
+  justify-content: center;
+
+  @include respond-to(1400px) {
+    flex-wrap: wrap;
+    min-width: fit-content;
+  }
+
+  @include respond-to(1000px) {
+    margin-top: 0;
+  }
+
+  @include respond-to(600px) {
+    flex-wrap: wrap;
+  }
+}
+
+//profile Section
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+.title {
+  font-size: $title-font-size;
+  text-align: center;
+
+  @include respond-to(600px) {
+    font-size: 2rem;
+  }
+}
+
+// Icons
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+//Buttons
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: $btn-padding;
+  width: $btn-width;
+  border-radius: $btn-radius;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: $btn-border-color 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: $btn-hover-bg;
+  color: $btn-hover-color;
+}
+
+.btn-color-1:hover {
+  background: $btn-color-1-hover-bg;
+}
+
+.btn-color-2 {
+  background: $btn-color-2-bg;
+}
+
+.btn-color-2:hover {
+  border: $btn-color-2-hover-border 0.1rem solid;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: $socials-gap;
+  flex-wrap: wrap;
+}
+
+.color-container {
+  border-color: $border-color;
+  background: rgb(250, 250, 250);
+}
+
+
+@include respond-to(1400px) {
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+    min-width: fit-content;
+  }
+
+}
+
+@include respond-to(1000px) {
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: $section-margin;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@include respond-to(600px) {
+  #profile {
+    height: 87vh;
+    margin-bottom: 0;
+  }
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}

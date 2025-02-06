@@ -1,0 +1,28 @@
+$img-size: 400px;
+$socials-gap: 1rem;
+
+.section__profile {
+  display: flex;
+  justify-content: center;
+}
+
+.section__img {
+  width: $img-size;
+  height: $img-size;
+}
+.section__img img {
+  height: 100%;
+  width: 100%;
+}
+
+.section__profile_text {
+  height: 400px;
+  align-self: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: $socials-gap;
+}
