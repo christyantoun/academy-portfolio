@@ -1,0 +1,46 @@
+$primary-color: black;
+$link-text-decoration-color: white;
+$hover-color: grey;
+$hover-underline-color: rgb(181, 181, 181);
+$nav-margin: 0 10rem;
+$nav-height: 17vh;
+$font-size: 1rem;
+$nav-links-gap: 2rem;
+$text-underline-offset: 1em;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: $nav-margin;
+    align-items: center;
+    height: $nav-height;
+  
+    .nav-links {
+      display: flex;
+      gap: $nav-links-gap;
+      list-style: none;
+      font-size: $font-size;
+  
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        text-decoration-color: $link-text-decoration-color;
+  
+        &:hover {
+          color: $hover-color;
+          text-decoration: underline;
+          text-underline-offset: $text-underline-offset;
+          text-decoration-color: $hover-underline-color;
+        }
+      }
+    }
+  }
+  
+  .logo {
+    font-size: $font-size;
+  
+    &:hover {
+      cursor: default;
+    }
+  }
+  
