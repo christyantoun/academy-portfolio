@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-  @Input() label: string = 'Click Me';
+  @Input() label: string = '';
   @Input() url: string = '';
   @Input() darkMode: boolean = false; 
 
