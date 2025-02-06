@@ -1,0 +1,37 @@
+<section id="profile">
+    <div class="section__profile">
+      <div class="section__img">
+        <img src="assets/random.jpeg" alt="Development picture" />
+
+    </div>
+    </div>
+    <div class="section__profile_text">
+      <div>
+      <h1 class="title">Your Name</h1>
+      <p class="section__text__p2">Fullstack Developer</p>
+  </div>
+      <div class="btn-container">
+    
+
+        <app-button [label]="'Download CV'" [url]="'assets/education.png'"  ></app-button>
+
+        <app-button [label]="'Contact Info'" [url]="'./#contact'" [darkMode]=true></app-button>
+     
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://linkedin.com/'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/'"
+        />
+      </div>
+    </div>
+  </section>
+  
