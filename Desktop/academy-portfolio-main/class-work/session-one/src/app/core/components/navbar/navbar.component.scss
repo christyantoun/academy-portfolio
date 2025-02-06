@@ -27,6 +27,7 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
+  cursor: pointer;
 }
 
 .logo {
@@ -34,5 +35,5 @@ a:hover {
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
 }

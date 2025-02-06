@@ -1,97 +1,73 @@
-/* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-p {
-  color: rgb(85, 85, 85);
-}
-
-/* SECTIONS */
-.section__profile {
+.about-containers,
+.about-details-container {
   display: flex;
   justify-content: center;
 }
-.section__profile_text {
-  height: 400px;
-  align-self: center;
+
+.about-pic {
+  border-radius: 2rem;
 }
 
-.section__img {
-  width: 400px;
-  height: 400px;
-}
-
-.section__img img {
-  height: 100%;
-  width: 100%;
-}
-
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  max-width: 300px;
+  text-align: center;
 }
 
 .section-container {
-  display: flex;
+  gap: 4rem;
+  height: 50%;
 }
 
-/* PROFILE SECTION */
-
-#profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+.section__pic-container {
+  height: 700px;
+  width: auto;
+  margin: auto 0;
 }
 
-.section__text {
-  align-self: center;
-  text-align: center;
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
 }
 
-.section__text p {
-  font-weight: 600;
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
 }
 
-.section__text__p1 {
-  text-align: center;
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
 }
 
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  text-align: center;
+.project-title {
+  margin: 1rem;
+  color: black;
 }
 
-.title {
-  font-size: 3rem;
-  text-align: center;
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
-
-
-/* ICONS */
-
-.icon {
-  cursor: pointer;
-  height: 2rem;
-}
-
 
 @media screen and (max-width: 1400px) {
   nav {
