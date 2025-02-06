@@ -5,10 +5,10 @@
 - [x] Create the components
 - [x] Add a commit message about the project setup and push it
 - [x] Copy the navbar section from the vanilla project and paste it into the navbar component you just created
-- [ ] Include component specific styles in the component's stylesheet
-- [ ] Update the css styles used to use scss styles
-- [ ] Include global styles in styles.scss
-- [ ] Commit and push the changes made to the navbar component
-- Inspect the browser and go over prominent dev tool features 
-- Bonus: Write and link a function to the TS file
+- [x] Include component specific styles in the component's stylesheet
+- [x] Update the css styles used to use scss styles
+- [x] Include global styles in styles.scss
+- [x] Commit and push the changes made to the navbar component
+- [x] Inspect the browser and go over prominent dev tool features 
+- [x] Bonus: Write and link a function to the TS file
 
