@@ -10,6 +10,7 @@
 - [x] Include global styles in styles.scss
 - [x] Commit and push the changes made to the navbar component
 - [x] Inspect the browser and go over prominent dev tool features 
-- [x] Bonus: Write and link a function to the TS file(can be found at hero.components.ts)
+- [x] Bonus: Write and link a function to the TS file (The file can be found at [`hero.components.ts`](https://github.com/Hani0101/academy-portfolio/blob/feature/hani's-classwork/class-work/session1/src/app/features/components/hero/hero.component.ts)).
+
 
 
