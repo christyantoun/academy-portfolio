@@ -1,0 +1,28 @@
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+app-project-card {
+  flex: 1;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  text-align: center;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
