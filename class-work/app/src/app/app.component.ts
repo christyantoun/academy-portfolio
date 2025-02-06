@@ -8,12 +8,12 @@ import { ProjectsComponent } from './features/all-projects/projects/projects.com
 @Component({
   selector: 'app-root',
   imports: [
-            RouterOutlet, 
-            NavbarComponent,
-            ProfileIntroComponent,
-            AboutMeComponent,
-            ProjectsComponent
-           ],
+    RouterOutlet, 
+    NavbarComponent,
+    ProfileIntroComponent,
+    AboutMeComponent,
+    ProjectsComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
