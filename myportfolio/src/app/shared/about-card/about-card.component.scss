@@ -1,0 +1,41 @@
+$primary-color: rgb(163, 163, 163);
+$border-radius: 2rem;
+$gap: 2rem;
+
+.about-containers {
+  display: flex;
+  gap: $gap;
+  margin-bottom: $gap;
+  margin-top: $gap;
+  width: 100%;
+
+  .details-container {
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    padding: $gap;
+    text-align: center;
+    margin-bottom: $gap;
+    flex: 1;
+  }
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.about-pic {
+  border-radius: $border-radius;
+}
+
+.section-container {
+  gap: $gap;
+}
+
+.section__pic-container {
+  width: auto;
+  margin: auto 0;
+}

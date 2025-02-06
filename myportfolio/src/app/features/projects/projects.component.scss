@@ -1,0 +1,19 @@
+$primary-color: rgb(163, 163, 163);
+$secondary-color: rgb(250, 250, 250);
+$border-radius: 2rem;
+$title-font-size: 3rem;
+$gap: 1rem;
+
+#projects {
+  text-align: center;
+  position: relative;
+}
+
+.color-container {
+  border-color: $primary-color;
+  background: $secondary-color;
+}
+
+.title{
+  font-size: $title-font-size;
+}
