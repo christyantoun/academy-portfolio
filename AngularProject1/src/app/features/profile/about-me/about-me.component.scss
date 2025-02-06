@@ -1,0 +1,35 @@
+$border-color_1: rgb(163, 163, 163);
+
+#about {
+	position: relative;
+}
+.about-details-container {
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+}
+.about-pic {
+	border-radius: 2rem;
+}
+.details-container {
+	padding: 1.5rem;
+	flex: 1;
+	background: white;
+	border-radius: 2rem;
+	border: rgb(53, 53, 53) 0.1rem solid;
+	border-color: $border-color_1;
+	text-align: center;
+}
+.section__text__p1 {
+	text-align: center;
+  }
+
+.section-container {
+	gap: 4rem;
+	height: 50%;
+}
+.section__pic-container {
+	height: 700px;
+	width: auto;
+	margin: auto 0;
+}
