@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-image">
+      <img [src]="image" [alt]="title" />
+    </div>
+    <div class="card-content">
+      <h2>{{ title }}</h2>
+      <p>{{ description }}</p>
+      <div class="card-buttons">
+        <app-button 
+          [label]="'GitHub'" 
+          type="outline" 
+          (onClick)="openLink(github)">
+        </app-button>
+        <app-button 
+          [label]="'Live Demo'" 
+          type="primary" 
+          (onClick)="openLink(demo)">
+        </app-button>
+      </div>
+    </div>
+  </div>
+  
