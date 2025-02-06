@@ -10,8 +10,9 @@ import {
   Output,
   SimpleChanges
 } from '@angular/core';
-import {ICategory} from "../../interfaces/category";
-import {IPerson} from "../../interfaces/project";
+ import {ICategory} from "../../interfaces/category";
+ import { CategoryService } from '../../services/category.service';
+// import {IPerson} from "../../interfaces/project";
 
 @Component({
   selector: 'app-multi-select',
@@ -19,8 +20,7 @@ import {IPerson} from "../../interfaces/project";
   imports: [],
   templateUrl: './multi-select.component.html',
   styleUrl: './multi-select.component.scss',
-});
-
+})
 export class MultiSelectComponent implements OnInit, OnChanges {
   @Input() items: ICategory[] = []
   @Output() selectionChange = new EventEmitter<ICategory[]>();
@@ -28,16 +28,21 @@ export class MultiSelectComponent implements OnInit, OnChanges {
   filteredItems: ICategory[] = []
   private elementRef = inject(ElementRef)
 
+  constructor(private categoryService:CategoryService){};
+  // people: IPerson[] = []
 
-  people: IPerson[] = []
 
+  ngOnChanges(changes: SimpleChanges)  {
+    // console.log(this.people)
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.people)
     this.filteredItems = changes['items'].currentValue;
   }
 
-  ngOnInit() {
+  ngOnInit():void {
+    this.categoryService.getCategories().subscribe(
+      {
+        next:value=>this.items=value,
+      });
     console.log(this.items);
     this.filteredItems = this.items
   }
@@ -48,6 +53,8 @@ export class MultiSelectComponent implements OnInit, OnChanges {
       this.isDropdownVisible = false
     }
   }
+
+ 
 
   filterItems(event: Event) {
     const searchItem = (event.target as HTMLInputElement).value.toLocaleLowerCase();
