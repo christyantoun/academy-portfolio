@@ -1,0 +1,39 @@
+.section__profile {
+    display: flex;
+    justify-content: center;
+}
+
+.section__profile_text {
+    height: 400px;
+    align-self: center;
+}
+
+.section__img {
+    width: 400px;
+    height: 400px;
+}
+  
+.section__img img {
+    height: 100%;
+    width: 100%;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
