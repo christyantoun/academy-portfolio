@@ -1,4 +1,6 @@
+// @ts-ignore
 import { Component } from '@angular/core';
+// @ts-ignore
 import { RouterOutlet } from '@angular/router';
 import {ProjectsComponent} from "./components/projects/projects.component";
 

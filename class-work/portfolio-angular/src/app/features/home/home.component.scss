@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.section__pic-container {
+  height: 700px;
+  width: auto;
+  margin: auto 0;
+}

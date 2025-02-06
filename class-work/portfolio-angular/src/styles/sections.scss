@@ -1,0 +1,30 @@
+section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  .section__img img {
+    width: 150px;
+    border-radius: 50%;
+  }
+}
+
+#projects {
+  .details-container {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .project-img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
