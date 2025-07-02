@@ -306,9 +306,9 @@ section {
   }
 
   .section__pic-container img {
-      border-radius: 50%;
+    border-radius: 50%;
   }
-  
+
   .about-containers {
     margin-top: 0;
   }
@@ -349,17 +349,17 @@ section {
   }
 
   .section__pic-container img {
-      border-radius: 50%;
+    border-radius: 50%;
   }
-  
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
-  
+
   .title {
     font-size: 2rem;
   }
-  
+
   .text-container {
     text-align: justify;
   }
