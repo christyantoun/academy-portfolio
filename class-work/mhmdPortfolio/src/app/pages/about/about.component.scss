@@ -24,7 +24,16 @@
 .about-pic {
   border-radius: 2rem;
 }
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+/* ICONS */
 
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -33,6 +42,9 @@
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   max-width: 300px;
+  text-align: center;
+}
+.section__text__p1 {
   text-align: center;
 }
 
@@ -46,3 +58,8 @@
   width: auto;
   margin: auto 0;
 }
+
+.text-container{
+  margin: 70px;
+}
+
