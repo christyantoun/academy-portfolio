@@ -1,0 +1,46 @@
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+
+
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .section__profile {
+    display: flex;
+    justify-content: center;
+
+    &_text {
+      height: 400px;
+      align-self: center;
+    }
+  }
+
+  .section__img {
+    width: 400px;
+    height: 400px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
