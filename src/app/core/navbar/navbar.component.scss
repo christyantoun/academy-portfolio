@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10rem;
+  align-items: center;
+  height: 17vh;
+
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1rem;
+    a {
+      text-decoration: none;
+      color: black;
+      transition: color 0.3s ease;
+
+
+    }
+  }
+}
+
