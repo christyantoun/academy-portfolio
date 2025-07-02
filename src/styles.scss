@@ -1,17 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+/* GLOBAL RESETS */
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 p {
   color: rgb(85, 85, 85);
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* SECTION LAYOUT */
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  min-height: fit-content;
+
+  .section-container {
+    display: flex;
+  }
+
+  .about-containers {
+  gap: 2rem;
+
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  max-width: 300px;
+  text-align: center;
+}
+
+ .section__text {
+    align-self: center;
+    text-align: center;
+
+    p {
+      font-weight: 600;
+    }
+
+    &__p1 {
+      text-align: center;
+    }
+
+    &__p2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
 }

@@ -1,0 +1,33 @@
+<div class="btn-container">
+  <button
+    *ngIf="showDownloadCV"
+    class="btn btn-color-2"
+    (click)="openLink('./assets/resume-example.pdf')"
+  >
+    Download CV
+  </button>
+
+  <button
+    *ngIf="showContact"
+    class="btn btn-color-1"
+    (click)="openLink('./#contact')"
+  >
+    Contact Info
+  </button>
+
+  <button
+    *ngIf="showGitHub"
+    class="btn btn-color-2 project-btn"
+    (click)="openLink(githubLink)"
+  >
+    Github
+  </button>
+
+  <button
+    *ngIf="showLiveDemo"
+    class="btn btn-color-2 project-btn"
+    (click)="openLink(liveDemoLink)"
+  >
+    Live Demo
+  </button>
+</div>
